@@ -1,0 +1,110 @@
+.main {
+    width:55%;
+    height:100vh;
+    position:relative;
+    top:0;
+    left:0;
+    float:left;
+}
+.main_bg, .poster, .short, .cards{
+    position:absolute;
+}
+.main_bg {
+    top:0;
+    left:0;
+    height:auto;
+    min-height:100vh;
+    width:100%;
+    overflow:hidden;
+}
+
+.main_bg img {
+    width:100%;
+}
+
+.poster {
+    left: 50%;
+    top: 10%;
+    width: 80%;
+    z-index: 1;
+
+}
+.cards {
+    left: 0%;
+    top: 8%;
+    width: 60%;
+}
+
+.short {
+    top: 13%;
+    left: 10%;
+    z-index: 5;
+    width: 90%;
+}
+.main_login {
+    width:45%;
+    float:right;
+    background:#333;
+    height:100vh;
+    text-align:center;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.logo {
+    width: 60%;
+    margin-top: 20%;
+    margin-bottom: 50px;
+}
+.btn {
+    border-radius: 40px;
+    padding: 15px;
+    text-align: center;
+    color: #3c3a3a;
+    width: 50%;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.btn_sign_in {
+    background:#fff;
+}
+.btn_sign_up {
+    background: #f7e55e;
+    text-transform: uppercase;
+}
+.dot {
+    position: absolute;
+    top: 3%;
+    right: 6%;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.label label {
+    Color: #fff;
+    margin-bottom: 10px;
+}
+.label input {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.sign_up_btns {
+    display:flex;
+}
+.sign_up_btns input {
+    margin-right: 10px;
+    padding: 0px 20px;
+    text-transform:none;
+}
+.sign_up_btns a {
+    padding: 10px 30px;
+    text-transform:none;
+}
+.forgot_pass {
+    color:#fff;
+    margin-top:20px;
+}

@@ -1,18 +1,43 @@
-<h1>Sign In</h1>
 
-<%= form_with model: @user, url: sign_in_path do |form|%>
-  <div class:"mb-3">
-    <%= form.label :email%>
+<div class="main">
+  <div class="main_bg">
+  <%= image_tag("svg/login_bg.svg") %>
+  </div>
+  <div class="short">
+  <%= image_tag("svg/short.svg") %>
+  </div>
+  <div class="cards">
+  <%= image_tag("svg/cards.svg") %>
+  </div>
+  <div class="poster">
+  <%= image_tag("svg/poster.svg") %>
+  </div>
+</div>
+<div class='login_btns main_login'>
+  <div class="logo">
+    <%= image_tag("svg/logo.svg") %>
+  </div>
+  <%= form_with model: @user, url: sign_in_path do |form|%>
+  <div class="label">
+    <%= form.label :email, 'Цахим хаяг' %>
     <%= form.text_field :email, class:"form-control", placeholder:"Example@gmail.com"%>
   </div>
-  <div class:"mb-3">
-    <%= form.label :password%>
+  <div class="label">
+    <%= form.label :password, 'Нууц үг'%>
     <%= form.password_field :password, class:"form-control", placeholder:"password"%>
-    <%= link_to "Forgot your password?", password_reset_path %>
+    <%= link_to "Forgot your password?", password_reset_path, class:'forgot_pass' %>
   </div>
-  <div class:"mb-3">
-    <%= form.submit "Sign In", class:"btn btn-primary"%>
+  <div class="sign_up_btns">
+    <%= form.submit "Нэвтрэх", class:"btn btn_sign_up"%>
+    <%= link_to 'Бүртгүүлэх', sign_up_path, class:"btn btn_sign_in" %>
   </div>
 
 <% end %>
+  
+  <div class="dot">
+    <%= image_tag("svg/dot.svg")%>
+  </div>
+</div>
+
+
 
